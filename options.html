@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Options :: OnCall Automation</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="/external/css/material-components-web.min.css">
+  <link rel="stylesheet" href="/external/css/style.css">
+</head>
+
+<body>
+
+  <div class="mdc-layout-grid">
+    <div class="mdc-layout-grid__inner">
+      <div class="mdc-layout-grid__cell--span-3"></div>
+      <div class="mdc-layout-grid__cell--span-6">
+        <div class="elevation-demo-surface mdc-elevation--z2">
+          <h5 class="mdc-typography--headline5 rm-tp-mr rm-btm-mr">OnCall Automation</h5>
+          <p class="mdc-typography--caption rm-tp-mr">Chrome Extension to Automate OnCall Workload</p>
+          <hr>
+          <h6 class="mdc-typography--headline6 add-tp-mr-32 rm-btm-mr">VictorsOps Unacked Notifier</h6>
+          <div class="text-field-container">
+            <div class="mdc-text-field mdc-text-field--disabled" data-mdc-auto-init="MDCTextField">
+              <input class="mdc-text-field__input" value="https://portal.victorops.com/client/*" type="text" id="victorops_url" disabled>
+              <label for="victorops_url" class="mdc-floating-label">VictorOps URL</label>
+              <div class="mdc-line-ripple"></div>
+            </div>
+            <p class="mdc-text-field-helper-text mdc-text-field-helper-text--persistent mdc-text-field-helper-text--validation-msg" id="pw-validation-msg">Automatically matches the organisation endpoint</p>
+          </div>
+
+          <div class="text-field-container add-btm-mr-32">
+            <div class="mdc-text-field" data-mdc-auto-init="MDCTextField">
+              <input class="mdc-text-field__input" value="10" type="text" id="victorops_notification_frequency">
+              <label for="victorops_notification_frequency" class="mdc-floating-label">Notification Frequency</label>
+              <div class="mdc-line-ripple"></div>
+            </div>
+            <p class="mdc-text-field-helper-text mdc-text-field-helper-text--persistent mdc-text-field-helper-text--validation-msg" id="pw-validation-msg">Default 10 Seconds</p>
+          </div>
+
+          <div id="save" class="mdc-button mdc-button--raised">Save</div>
+          <span id="save-status" class="mdc-typography--caption"></span>
+
+          <p class="mdc-typography--body2 dev-footer">Developed by <a href="http://github.com/faizsiddiqui">Faiz Siddiqui</a></p>
+        </div>
+      </div>
+      <div class="mdc-layout-grid__cell--span-3"></div>
+    </div>
+  </div>
+
+  <script src="/external/js/jquery.min.js"></script>
+  <script src="/external/js/material-components-web.min.js"></script>
+  <script src="common.js"></script>
+  <script src="options.js"></script>
+
+</body>
+
+</html>
