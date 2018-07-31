@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Options :: OnCall Automation</title>
+  <title>Options - Knocknock :: OnCall Automation</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
   <link rel="stylesheet" href="/external/css/material-components-web.min.css">
   <link rel="stylesheet" href="/external/css/style.css">
@@ -16,7 +16,7 @@
       <div class="mdc-layout-grid__cell--span-3"></div>
       <div class="mdc-layout-grid__cell--span-6">
         <div class="elevation-demo-surface mdc-elevation--z2">
-          <h5 class="mdc-typography--headline5 rm-tp-mr rm-btm-mr">OnCall Automation</h5>
+          <h5 class="mdc-typography--headline5 rm-tp-mr rm-btm-mr">Options - Knocknock :: OnCall Automation</h5>
           <p class="mdc-typography--caption rm-tp-mr">Chrome Extension to Automate OnCall Workload</p>
           <hr>
           <h6 class="mdc-typography--headline6 add-tp-mr-32 rm-btm-mr">VictorsOps Unacked Notifier</h6>
@@ -27,6 +27,15 @@
               <div class="mdc-line-ripple"></div>
             </div>
             <p class="mdc-text-field-helper-text mdc-text-field-helper-text--persistent mdc-text-field-helper-text--validation-msg" id="pw-validation-msg">Automatically matches the organisation endpoint</p>
+          </div>
+
+          <div class="text-field-container add-btm-mr-32">
+            <div class="mdc-text-field" data-mdc-auto-init="MDCTextField">
+              <input class="mdc-text-field__input" value="30" type="text" id="victorops_tab_refresh_frequency">
+              <label for="victorops_tab_refresh_frequency" class="mdc-floating-label">Tab Refresh Frequency</label>
+              <div class="mdc-line-ripple"></div>
+            </div>
+            <p class="mdc-text-field-helper-text mdc-text-field-helper-text--persistent mdc-text-field-helper-text--validation-msg" id="pw-validation-msg">Default 30 Minutes</p>
           </div>
 
           <div class="text-field-container add-btm-mr-32">

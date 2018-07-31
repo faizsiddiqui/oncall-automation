@@ -1,20 +1,20 @@
 {
   "manifest_version": 2,
-  "name": "OnCall Automation",
-  "version": "1.0",
-  "description": "Created by Faiz",
+  "name": "Knocknock :: OnCall Automation",
+  "version": "1.1",
+  "description": "Chrome extension for OnCall Automation",
   "permissions": [
-    "storage", "activeTab"
+    "storage", "notifications"
   ],
   "content_scripts": [{
     "matches": ["https://portal.victorops.com/client/*"],
     "run_at": "document_end",
-    "js": ["/external/js/jquery.min.js", "/external/js/playSound.js", "common.js", "content_script.js"]
+    "js": ["/external/js/jquery.min.js", "common.js", "content_script.js"]
   }],
   "options_page": "options.html",
   "background": {
     "persistent": false,
-    "scripts": ["common.js", "background.js"]
+    "scripts": ["/external/js/jquery.min.js", "/external/js/playSound.js", "common.js", "background.js"]
   },
   "browser_action": {
     "default_icon": "/external/icons/default_icon.png"
@@ -24,6 +24,6 @@
     "128": "/external/icons/icon_128.png"
   },
   "web_accessible_resources": [
-    "/external/knock-knock.mp3"
+    "/external/knock-knock.mp3", "/external/icons/icon_48.png"
   ]
 }
